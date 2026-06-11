@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============ SEO PRIMARY META ============ -->
+  <title>Clay Diary | Handmade Brooklyn Pottery, Commissions & Classes</title>
+  <meta name="description" content="Clay Diary — handcrafted stoneware, porcelain & functional pottery by Mia, a self-taught Brooklyn ceramist. Shop one-of-a-kind pieces, book commissions, and join ceramics classes & sales events in NYC." />
+  <meta name="keywords" content="Brooklyn ceramics, handmade pottery, ceramic artist NYC, stoneware mugs, porcelain bowls, ceramics classes Brooklyn, pottery commissions, self-taught ceramist, Clay Diary ceramics, handmade tableware, wheel throwing classes, ceramic sales event" />
+  <meta name="author" content="Mia — Clay Diary" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#8ec5e6" />
+  <link rel="canonical" href="https://claydiary.com/" />
+
+  <!-- ============ OPEN GRAPH / SOCIAL ============ -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Clay Diary" />
+  <meta property="og:title" content="Clay Diary | Handmade Brooklyn Pottery & Commissions" />
+  <meta property="og:description" content="Handcrafted stoneware & porcelain by a self-taught Brooklyn ceramist. Shop pieces, book commissions, join classes." />
+  <meta property="og:url" content="https://claydiary.com/" />
+  <meta property="og:image" content="https://claydiary.com/og-image.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Clay Diary | Handmade Brooklyn Pottery & Commissions" />
+  <meta name="twitter:description" content="Handcrafted stoneware & porcelain by a self-taught Brooklyn ceramist. Shop, commission, learn." />
+  <meta name="twitter:image" content="https://claydiary.com/og-image.jpg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- ============ STRUCTURED DATA (JSON-LD) ============ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "@id": "https://claydiary.com/#business",
+    "name": "Clay Diary",
+    "image": "https://claydiary.com/og-image.jpg",
+    "description": "Clay Diary — handmade stoneware and porcelain ceramics by Mia, a self-taught Brooklyn ceramist, teacher, and technician. Shop functional pottery, commission custom work, and join ceramics classes.",
+    "url": "https://claydiary.com/",
+    "priceRange": "$$",
+    "founder": { "@type": "Person", "name": "Mia Calixto" },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "NY",
+      "addressCountry": "US"
+    },
+    "sameAs": [
+      "https://www.instagram.com/claydiary_",
+      "https://www.tiktok.com/@claydiary",
+      "https://www.etsy.com/shop/claydiary"
+    ],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Handmade Stoneware Mug" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Custom Ceramic Commissions" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Ceramics Classes & Workshops" } }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mia Calixto",
+    "jobTitle": "Self-Taught Ceramist, Kids Ceramics Teacher & Studio Technician",
+    "homeLocation": { "@type": "Place", "name": "Brooklyn, New York" },
+    "knowsAbout": ["Wheel throwing", "Glaze chemistry", "Kiln firing", "Hand building", "Ceramic sculpture"],
+    "worksFor": { "@id": "https://claydiary.com/#business" }
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sky:        #8ec5e6;
+      --sky-deep:   #5fa8d3;
+      --sky-soft:   #d6ecf7;
+      --sky-wash:   #eef7fc;
+      --white:      #ffffff;
+      --cream:      #fbf9f5;
+      --brown:      #c8a78a;
+      --brown-deep: #a07e63;
+      --brown-soft: #ecdfd1;
+      --terra:      #d97757;
+      --terra-deep: #b85a3e;
+      --terra-soft: #fbe4d4;
+      --terra-wash: #fef3eb;
+      --terra-pale: #fde7d6;
+      --blush:      #fcd5b8;
+      --peach:      #fdcaa6;
+      --ember:      #c84d2e;
+      --copper:     #b87333;
+      --ink:        #2f3a42;
+      --muted:      #6b7a84;
+      --line:       #e6ebef;
+      --shadow-sm:  0 2px 12px rgba(60,90,120,.07);
+      --shadow-md:  0 10px 40px rgba(60,90,120,.12);
+      --shadow-warm:0 10px 40px rgba(217,119,87,.18);
+      --sunset:     linear-gradient(135deg, #d97757 0%, #e89b6f 50%, #f5c4a3 100%);
+      --warm-glow:  radial-gradient(900px 500px at 20% 30%, rgba(217,119,87,.18) 0%, transparent 60%);
+      --orange-blue:linear-gradient(135deg, var(--terra-soft) 0%, var(--peach) 35%, var(--sky-soft) 100%);
+      --sunset-sky: linear-gradient(180deg, var(--terra-soft) 0%, var(--terra-wash) 40%, var(--sky-wash) 80%, var(--sky-soft) 100%);
+      --sky-sunset: linear-gradient(180deg, var(--sky-soft) 0%, var(--sky-wash) 40%, var(--terra-wash) 80%, var(--terra-soft) 100%);
+      --warm-wash:  linear-gradient(135deg, var(--terra-wash) 0%, var(--sky-wash) 100%);
+      --peach-mist: linear-gradient(135deg, #fde2cf 0%, #f8d5b8 50%, #d6ecf7 100%);
+      --ember-mist: linear-gradient(135deg, #fde2cf 0%, #f8b890 50%, #b8d8e8 100%);
+      --radius:     16px;
+      --radius-lg:  26px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      background:
+        radial-gradient(1400px 700px at 90% 5%, rgba(217,119,87,.10) 0%, transparent 55%),
+        radial-gradient(1200px 600px at 0% 50%, rgba(95,168,211,.10) 0%, transparent 55%),
+        radial-gradient(1200px 700px at 50% 100%, rgba(217,119,87,.08) 0%, transparent 60%),
+        var(--white);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      position: relative;
+    }
+    body::before {
+      content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 0;
+      background:
+        radial-gradient(2px 2px at 8% 12%, rgba(217,119,87,.4), transparent),
+        radial-gradient(1.5px 1.5px at 22% 38%, rgba(95,168,211,.35), transparent),
+        radial-gradient(2px 2px at 42% 8%, rgba(184,90,62,.3), transparent),
+        radial-gradient(1.5px 1.5px at 68% 22%, rgba(217,119,87,.35), transparent),
+        radial-gradient(2px 2px at 88% 42%, rgba(95,168,211,.3), transparent),
+        radial-gradient(1.5px 1.5px at 12% 68%, rgba(184,90,62,.3), transparent),
+        radial-gradient(1.5px 1.5px at 55% 88%, rgba(217,119,87,.35), transparent),
+        radial-gradient(2px 2px at 92% 92%, rgba(95,168,211,.3), transparent);
+    }
+    h1,h2,h3,h4 { font-family: 'Fraunces', serif; font-weight: 500; line-height: 1.12; letter-spacing: -0.01em; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+    section { scroll-margin-top: 84px; }
+
+    /* ---------- Announcement bar ---------- */
+    .announce {
+      background: linear-gradient(90deg, var(--terra) 0%, #e08a64 50%, var(--sky-deep) 100%);
+      color: #fff;
+      text-align: center;
+      font-size: .82rem;
+      letter-spacing: .04em;
+      padding: 9px 16px;
+      font-weight: 500;
+    }
+    .announce a { text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ---------- Header / Nav ---------- */
+    header.nav {
+      position: sticky; top: 0; z-index: 50;
+      background: rgba(255,255,255,.88);
+      backdrop-filter: saturate(140%) blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+    .brand { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 600; letter-spacing: -.02em; display:flex; align-items:center; gap:.5rem; }
+    .brand .dot {
+      width: 11px; height: 11px; border-radius: 50%;
+      background: var(--sunset);
+      box-shadow: 0 0 0 4px var(--terra-soft), 0 4px 14px rgba(217,119,87,.35);
+    }
+    .nav-links { display: flex; gap: 34px; align-items: center; }
+    .nav-links a { font-size: .92rem; font-weight: 500; color: var(--ink); transition: color .2s; }
+    .nav-links a:hover { color: var(--sky-deep); }
+    .nav-cta {
+      background: var(--ink); color: #fff; padding: 10px 20px; border-radius: 100px;
+      font-size: .88rem; font-weight: 500; transition: transform .2s, background .2s;
+    }
+    .nav-cta:hover { transform: translateY(-1px); background: var(--terra-deep); box-shadow: 0 6px 20px rgba(184,90,62,.25); }
+    .hamburger { display:none; font-size:1.6rem; background:none; border:none; cursor:pointer; color:var(--ink); }
+
+    /* ---------- Hero / Splash ---------- */
+    .hero {
+      position: relative; overflow: hidden;
+      background:
+        radial-gradient(1100px 600px at 85% -10%, var(--terra-soft) 0%, transparent 55%),
+        radial-gradient(1000px 500px at 5% 105%, var(--sky-soft) 0%, transparent 55%),
+        radial-gradient(900px 500px at 50% 50%, rgba(251,228,212,.35) 0%, transparent 70%),
+        var(--cream);
+      padding: 92px 0 96px;
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(2px 2px at 12% 18%, rgba(217,119,87,.4), transparent),
+        radial-gradient(1.5px 1.5px at 78% 32%, rgba(95,168,211,.4), transparent),
+        radial-gradient(1.5px 1.5px at 35% 78%, rgba(200,77,46,.35), transparent),
+        radial-gradient(2px 2px at 88% 88%, rgba(95,168,211,.35), transparent);
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 56px; align-items: center; }
+    .eyebrow {
+      display:inline-block; font-size:.78rem; letter-spacing:.16em; text-transform:uppercase;
+      color: var(--brown-deep); font-weight:600; margin-bottom: 18px;
+      background: var(--white); padding: 7px 15px; border-radius: 100px; box-shadow: var(--shadow-sm);
+    }
+    .hero h1 { font-size: clamp(2.6rem, 5.4vw, 4.4rem); margin-bottom: 22px; }
+    .hero h1 em { font-style: italic; color: var(--sky-deep); }
+    .hero p.lead { font-size: 1.18rem; color: var(--muted); max-width: 30rem; margin-bottom: 32px; }
+    .hero-cta { display:flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display:inline-flex; align-items:center; gap:.5rem; padding: 14px 28px; border-radius: 100px;
+      font-weight: 500; font-size: .98rem; cursor: pointer; border: 1px solid transparent;
+      transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--terra) 0%, #e08a64 100%);
+      color:#fff; box-shadow: 0 4px 14px rgba(217,119,87,.3);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .btn-ghost { background: var(--white); color: var(--ink); border-color: var(--line); }
+    .btn-ghost:hover { border-color: var(--sky-deep); color: var(--sky-deep); }
+
+    .hero-visual { position: relative; }
+    .hero-card {
+      aspect-ratio: 4/5; border-radius: var(--radius-lg); overflow:hidden;
+      background: linear-gradient(160deg, var(--sky) 0%, var(--sky-soft) 45%, var(--brown-soft) 100%);
+      box-shadow: var(--shadow-md); position: relative; display:flex; align-items:center; justify-content:center;
+    }
+    .hero-card .vase { font-size: 9rem; filter: drop-shadow(0 12px 24px rgba(0,0,0,.12)); }
+    .hero-badge {
+      position:absolute; bottom: 22px; left: 22px; background: rgba(255,255,255,.94);
+      backdrop-filter: blur(4px); padding: 14px 18px; border-radius: 14px; box-shadow: var(--shadow-sm);
+      font-size: .82rem;
+    }
+    .hero-badge strong { display:block; font-family:'Fraunces',serif; font-size:1.05rem; }
+    .float-tag {
+      position:absolute; top: 26px; right: -10px; background: var(--white);
+      padding: 10px 16px; border-radius: 100px; box-shadow: var(--shadow-md); font-size:.82rem; font-weight:500;
+    }
+
+    /* ---------- Trust strip ---------- */
+    .trust {
+      background:
+        linear-gradient(90deg, var(--ink) 0%, #3a4a55 40%, #4a3a35 70%, #3a302e 100%);
+      color: #f5d9c7;
+      position: relative;
+    }
+    .trust::before {
+      content: ""; position: absolute; inset: 0;
+      background:
+        radial-gradient(400px 100px at 25% 50%, rgba(217,119,87,.18) 0%, transparent 70%),
+        radial-gradient(400px 100px at 75% 50%, rgba(95,168,211,.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .trust-inner { display:flex; flex-wrap:wrap; justify-content:space-around; gap: 20px; padding: 22px 0; text-align:center; }
+    .trust-item { font-size: .86rem; letter-spacing:.04em; }
+    .trust-item strong { color:#fff; font-family:'Fraunces',serif; font-size:1.5rem; display:block; }
+
+    /* ---------- Section headings ---------- */
+    .sec { padding: 90px 0; }
+    .sec-head { text-align:center; max-width: 44rem; margin: 0 auto 54px; }
+    .sec-head .kicker { font-size:.78rem; letter-spacing:.16em; text-transform:uppercase; color: var(--sky-deep); font-weight:600; }
+    .sec-head h2 { font-size: clamp(2rem, 4vw, 3rem); margin: 12px 0 16px; }
+    .sec-head p { color: var(--muted); font-size: 1.08rem; }
+
+    /* ---------- Shop ---------- */
+    #shop {
+      background:
+        radial-gradient(800px 400px at 90% 10%, rgba(217,119,87,.18) 0%, transparent 60%),
+        radial-gradient(700px 400px at 10% 90%, rgba(95,168,211,.18) 0%, transparent 60%),
+        linear-gradient(180deg, var(--terra-wash) 0%, var(--sky-wash) 100%);
+      position: relative;
+    }
+    .filters { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom: 40px; }
+    .chip {
+      background:#fff; border:1px solid var(--line); padding:9px 18px; border-radius:100px;
+      font-size:.86rem; font-weight:500; cursor:pointer; transition:.2s; color: var(--muted);
+    }
+    .chip.active, .chip:hover {
+      background: linear-gradient(135deg, var(--terra) 0%, var(--terra-deep) 100%);
+      color:#fff; border-color: var(--terra-deep);
+      box-shadow: 0 4px 14px rgba(217,119,87,.25);
+    }
+    .grid { display:grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+    .card {
+      background:#fff; border-radius: var(--radius); overflow:hidden; box-shadow: var(--shadow-sm);
+      transition: transform .25s, box-shadow .25s; display:flex; flex-direction:column;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: var(--shadow-warm); border: 1px solid var(--terra-soft); }
+    .card .thumb { aspect-ratio: 1/1; display:flex; align-items:center; justify-content:center; font-size: 3.6rem; position:relative; }
+    .t1{background:linear-gradient(150deg,var(--terra-soft) 0%, var(--sky-soft) 100%);}
+    .t2{background:linear-gradient(150deg,var(--brown-soft) 0%, var(--terra-soft) 100%);}
+    .t3{background:linear-gradient(150deg,#fff 0%, var(--terra-soft) 100%);}
+    .t4{background:linear-gradient(150deg,var(--sky-soft) 0%, var(--brown-soft) 100%);}
+    .t5{background:linear-gradient(150deg,var(--terra-soft) 0%, var(--brown-soft) 100%);}
+    .t6{background:linear-gradient(150deg,var(--sky-soft) 0%, var(--terra-soft) 100%);}
+    .card .pill { position:absolute; top:12px; left:12px; background:linear-gradient(135deg,#fff 0%, #fef3eb 100%); font-size:.7rem; font-weight:700; letter-spacing:.04em; text-transform:uppercase; padding:5px 10px; border-radius:100px; color:var(--terra-deep); box-shadow: 0 2px 8px rgba(184,90,62,.15); }
+    .card .body {
+      padding: 18px 18px 22px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(180deg, #fff 0%, var(--terra-wash) 100%);
+    }
+    .card h3 { font-size: 1.12rem; margin-bottom: 4px; }
+    .card .sub { font-size:.86rem; color:var(--muted); margin-bottom: 14px; flex:1; }
+    .card .row { display:flex; align-items:center; justify-content:space-between; }
+    .card .price { font-family:'Fraunces',serif; font-size:1.2rem; font-weight:600; }
+    .card .add { background:var(--sky-deep); color:#fff; border:none; padding:9px 16px; border-radius:100px; font-size:.84rem; font-weight:500; cursor:pointer; transition:.2s; }
+    .card .add:hover { background: linear-gradient(135deg, var(--terra-deep) 0%, var(--ember) 100%); }
+    .shop-foot { text-align:center; margin-top: 48px; }
+
+    /* ---------- About ---------- */
+    #about {
+      background:
+        radial-gradient(900px 500px at 80% 20%, rgba(95,168,211,.2) 0%, transparent 60%),
+        radial-gradient(800px 500px at 20% 80%, rgba(217,119,87,.22) 0%, transparent 60%),
+        linear-gradient(135deg, var(--cream) 0%, var(--terra-wash) 50%, var(--sky-wash) 100%);
+      position: relative;
+    }
+    .about-grid { display:grid; grid-template-columns: .9fr 1.1fr; gap: 60px; align-items:center; }
+    .about-photo {
+      aspect-ratio: 4/5; border-radius: var(--radius-lg);
+      background:
+        radial-gradient(600px 400px at 30% 20%, rgba(217,119,87,.4) 0%, transparent 60%),
+        linear-gradient(160deg, var(--terra) 0%, var(--brown) 45%, var(--sky) 100%);
+      box-shadow: var(--shadow-warm); display:flex; align-items:center; justify-content:center; font-size: 7rem;
+      position: relative;
+    }
+    .about-photo .stamp {
+      position:absolute; bottom:-18px; right:-18px; width:104px; height:104px; border-radius:50%;
+      background:#fff; box-shadow: var(--shadow-md); display:flex; align-items:center; justify-content:center;
+      flex-direction:column; font-family:'Fraunces',serif; font-size:.7rem; text-align:center; color:var(--brown-deep); line-height:1.2;
+    }
+    .about-text h2 { font-size: clamp(2rem,4vw,2.9rem); margin-bottom: 20px; }
+    .about-text h2 em { font-style:italic; color:var(--sky-deep); }
+    .about-text p { color: #4a5862; margin-bottom: 18px; font-size: 1.05rem; }
+    .creds { display:grid; grid-template-columns: repeat(2,1fr); gap:16px; margin-top: 28px; }
+    .cred {
+      background: linear-gradient(150deg, #fff 0%, var(--cream) 100%);
+      border: 1px solid var(--terra-soft);
+      border-radius: 14px;
+      padding: 18px;
+    }
+    .cred .ic { font-size:1.5rem; }
+    .cred h4 { font-family:'Inter',sans-serif; font-weight:600; font-size:.98rem; margin:8px 0 4px; }
+    .cred p { font-size:.86rem; color:var(--muted); margin:0; }
+
+    /* ---------- Services ---------- */
+    .svc-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:26px; }
+    .svc {
+      background: linear-gradient(150deg, #fff 0%, var(--terra-wash) 100%);
+      border: 1px solid var(--terra-soft);
+      border-radius: var(--radius);
+      padding: 34px 28px;
+      transition: .25s;
+    }
+    .svc:hover { box-shadow: var(--shadow-warm); transform: translateY(-4px); border-color: var(--terra); }
+    .svc .ic {
+      width: 54px; height: 54px; border-radius: 14px;
+      background: linear-gradient(135deg, var(--terra-soft) 0%, var(--sky-soft) 100%);
+      display: flex; align-items: center; justify-content: center; font-size: 1.7rem; margin-bottom: 18px;
+    }
+    .svc h3 { font-size:1.3rem; margin-bottom:10px; }
+    .svc p { color:var(--muted); font-size:.96rem; margin-bottom:16px; }
+    .svc a.more { color:var(--sky-deep); font-weight:600; font-size:.9rem; }
+
+    /* ---------- Events / CTA band ---------- */
+    .band {
+      background:
+        radial-gradient(800px 300px at 80% -10%, rgba(255,255,255,.18) 0%, transparent 60%),
+        radial-gradient(600px 300px at 0% 110%, rgba(184,90,62,.3) 0%, transparent 60%),
+        linear-gradient(120deg, var(--terra-deep) 0%, var(--terra) 50%, #e89b6f 100%);
+      color:#fff; border-radius: var(--radius-lg); padding: 56px 48px; text-align:center; position:relative; overflow:hidden;
+      box-shadow: 0 20px 60px rgba(184,90,62,.25);
+    }
+    .band::before {
+      content: ""; position: absolute; inset: 0;
+      background:
+        radial-gradient(2px 2px at 15% 25%, rgba(255,255,255,.5), transparent),
+        radial-gradient(1.5px 1.5px at 60% 60%, rgba(255,255,255,.4), transparent),
+        radial-gradient(1.5px 1.5px at 85% 80%, rgba(255,255,255,.45), transparent);
+      pointer-events: none;
+    }
+    .band h2 { font-size: clamp(1.9rem,4vw,2.8rem); margin-bottom:14px; color:#fff; }
+    .band p { color: #eaf5fb; max-width: 38rem; margin: 0 auto 26px; font-size:1.08rem; }
+    .band .btn-primary { background:#fff; color:var(--sky-deep); }
+    .band .btn-primary:hover { background: var(--ink); color:#fff; }
+
+    /* ---------- Testimonials ---------- */
+    .quotes { display:grid; grid-template-columns: repeat(3,1fr); gap:24px; }
+    .quote {
+      background: linear-gradient(150deg, #fff 0%, var(--terra-wash) 100%);
+      border: 1px solid var(--terra-soft);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .quote .stars { color: var(--brown); letter-spacing:2px; margin-bottom:12px; }
+    .quote p { font-size:1rem; color:#4a5862; margin-bottom:16px; }
+    .quote .who { font-weight:600; font-size:.9rem; }
+    .quote .who span { display:block; color:var(--muted); font-weight:400; font-size:.82rem; }
+
+    /* ---------- Newsletter ---------- */
+    #journal {
+      background:
+        radial-gradient(700px 400px at 10% 30%, rgba(217,119,87,.18) 0%, transparent 60%),
+        radial-gradient(700px 400px at 90% 70%, rgba(95,168,211,.2) 0%, transparent 60%),
+        linear-gradient(180deg, var(--terra-wash) 0%, var(--sky-wash) 50%, var(--terra-wash) 100%);
+      position: relative;
+    }
+    .news { display:flex; gap:14px; max-width: 30rem; margin: 22px auto 0; }
+    .news input { flex: 1; padding: 14px 18px; border: 1px solid var(--terra-soft); border-radius: 100px; font-size: .95rem; font-family: inherit; background: rgba(255,255,255,.85); }
+    .news input:focus { outline: none; border-color: var(--terra); box-shadow: 0 0 0 3px rgba(217,119,87,.15); }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background:
+        radial-gradient(900px 400px at 0% 0%, rgba(217,119,87,.25) 0%, transparent 60%),
+        radial-gradient(800px 400px at 100% 100%, rgba(95,168,211,.2) 0%, transparent 60%),
+        linear-gradient(135deg, #1a1f24 0%, #2a2520 40%, #1f2a30 70%, #1a1f24 100%);
+      color: #d6c5b8;
+      padding: 64px 0 30px;
+      position: relative;
+    }
+    footer::before {
+      content: ""; position: absolute; inset: 0; pointer-events: none;
+      background:
+        radial-gradient(2px 2px at 15% 25%, rgba(217,119,87,.35), transparent),
+        radial-gradient(1.5px 1.5px at 70% 65%, rgba(95,168,211,.3), transparent),
+        radial-gradient(1.5px 1.5px at 90% 30%, rgba(184,90,62,.25), transparent);
+    }
+    .foot-grid { display:grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 44px; }
+    footer h4 { color: #f5d9c7; font-family: 'Inter', sans-serif; font-weight: 600; font-size: .95rem; margin-bottom: 16px; }
+    footer .brand { color: #fff; margin-bottom: 14px; }
+    footer p { font-size: .9rem; max-width: 22rem; color: #c5b5a8; }
+    footer ul { list-style:none; }
+    footer ul li { margin-bottom:10px; }
+    footer ul li a { font-size:.9rem; transition:color .2s; }
+    footer ul li a:hover { color: var(--terra); }
+    .foot-bottom { border-top: 1px solid rgba(217,119,87,.18); padding-top: 24px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-size: .82rem; }
+    .socials { display: flex; gap: 14px; }
+    .socials a {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: linear-gradient(135deg, #3a2e2a 0%, #2a3035 100%);
+      display: flex; align-items: center; justify-content: center; transition: .2s;
+    }
+    .socials a:hover { background: linear-gradient(135deg, var(--terra) 0%, var(--terra-deep) 100%); color: #fff; transform: translateY(-2px); }
+
+    /* ---------- Commission form ---------- */
+    .commission-form { max-width: 780px; margin: 0 auto; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+    .form-group { display: flex; flex-direction: column; gap: 7px; }
+    .form-group label { font-size: .86rem; font-weight: 600; color: var(--ink); }
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      padding: 13px 16px; border: 1px solid var(--line); border-radius: 12px;
+      font-size: .96rem; font-family: inherit; color: var(--ink);
+      background: #fff; transition: border-color .2s, box-shadow .2s;
+    }
+    .form-group input:focus,
+    .form-group select:focus,
+    .form-group textarea:focus {
+      outline: none; border-color: var(--terra);
+      box-shadow: 0 0 0 3px rgba(217,119,87,.18);
+    }
+    .form-group textarea { resize: vertical; min-height: 130px; }
+    .form-group select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7a84' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px;
+    }
+    .form-single { margin-bottom: 20px; }
+    .form-foot { display: flex; align-items: center; gap: 20px; margin-top: 28px; flex-wrap: wrap; }
+    .form-note { font-size: .84rem; color: var(--muted); }
+    @media (max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
+
+    /* ---------- Toast ---------- */
+    .toast {
+      position: fixed; bottom: 26px; left: 50%; transform: translateX(-50%) translateY(120%);
+      background: var(--ink); color:#fff; padding: 14px 24px; border-radius: 100px; box-shadow: var(--shadow-md);
+      font-size:.92rem; z-index: 100; transition: transform .35s cubic-bezier(.2,.8,.2,1);
+    }
+    .toast.show { transform: translateX(-50%) translateY(0); }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 980px) {
+      .hero-grid, .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .grid { grid-template-columns: repeat(2,1fr); }
+      .svc-grid, .quotes { grid-template-columns: 1fr; }
+      .foot-grid { grid-template-columns: 1fr 1fr; }
+      .nav-links { display:none; }
+      .hamburger { display:block; }
+      .nav-links.open {
+        display:flex; flex-direction:column; position:absolute; top:70px; left:0; right:0;
+        background:#fff; padding:20px 28px; gap:18px; border-bottom:1px solid var(--line); box-shadow: var(--shadow-md);
+      }
+    }
+    @media (max-width: 560px) {
+      .grid { grid-template-columns: 1fr; }
+      .foot-grid { grid-template-columns: 1fr; }
+      .news { flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Announcement -->
+  <div class="announce">✦ Free U.S. shipping on orders over $120 — new spring collection now live. <a href="#shop">Shop the drop →</a></div>
+
+  <!-- Nav -->
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand"><span class="dot"></span> Clay&nbsp;Diary</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#shop">Shop</a>
+        <a href="#about">About Mia</a>
+        <a href="#commission">Commissions</a>
+        <a href="#events">Classes &amp; Events</a>
+        <a href="#shop" class="nav-cta">Shop Now</a>
+      </nav>
+      <button class="hamburger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ============ HERO / SPLASH ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Handmade in Brooklyn, NY</span>
+        <h1>Pottery with <em>soul</em>, thrown one piece at a time.</h1>
+        <p class="lead">Clay Diary is Mia's small Brooklyn studio making functional stoneware and porcelain for everyday rituals — your morning coffee, a slow dinner, the quiet moments in between.</p>
+        <div class="hero-cta">
+          <a href="#shop" class="btn btn-primary">Shop the Collection →</a>
+          <a href="#services" class="btn btn-ghost">Commission a Piece</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <div class="vase">🏺</div>
+          <div class="hero-badge"><strong>Hand-thrown</strong>Small-batch · wood-fired finishes</div>
+        </div>
+        <div class="float-tag">🏺 Hand-thrown in Brooklyn</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <div class="trust">
+    <div class="wrap trust-inner">
+      <div class="trust-item"><strong>Since 2019</strong> at the wheel</div>
+      <div class="trust-item"><strong>Brooklyn</strong> born &amp; raised</div>
+      <div class="trust-item"><strong>Self-taught</strong> by watching the techs</div>
+      <div class="trust-item"><strong>100%</strong> handmade in BK</div>
+    </div>
+  </div>
+
+  <!-- ============ SHOP ============ -->
+  <section class="sec" id="shop">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">The Shop</span>
+        <h2>Functional pieces for everyday living</h2>
+        <p>Each item is wheel-thrown, trimmed, glazed, and fired by hand in Mia's Brooklyn studio. No two pieces are exactly alike — that's the point.</p>
+      </div>
+
+      <div class="filters">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="mugs">Mugs &amp; Cups</button>
+        <button class="chip" data-filter="bowls">Bowls</button>
+        <button class="chip" data-filter="vases">Vases</button>
+        <button class="chip" data-filter="tableware">Tableware</button>
+      </div>
+
+      <div class="grid">
+        <article class="card" data-cat="mugs">
+          <div class="thumb t1"><span class="pill">Bestseller</span>☕</div>
+          <div class="body">
+            <h3>Sky Wash Mug</h3>
+            <p class="sub">Stoneware mug, sky-blue matte glaze, 12oz. Speckled clay body.</p>
+            <div class="row"><span class="price">$48</span><button class="add" data-name="Sky Wash Mug">Add to cart</button></div>
+          </div>
+        </article>
+        <article class="card" data-cat="bowls">
+          <div class="thumb t2"><span class="pill">New</span>🥣</div>
+          <div class="body">
+            <h3>Driftwood Bowl</h3>
+            <p class="sub">Hand-thrown serving bowl, warm clay glaze with sky-blue rim.</p>
+            <div class="row"><span class="price">$72</span><button class="add" data-name="Driftwood Bowl">Add to cart</button></div>
+          </div>
+        </article>
+        <article class="card" data-cat="vases">
+          <div class="thumb t3">🏺</div>
+          <div class="body">
+            <h3>Cloud Bud Vase</h3>
+            <p class="sub">Porcelain bud vase, satin white finish. Perfect for single stems.</p>
+            <div class="row"><span class="price">$64</span><button class="add" data-name="Cloud Bud Vase">Add to cart</button></div>
+          </div>
+        </article>
+        <article class="card" data-cat="tableware">
+          <div class="thumb t4"><span class="pill">Limited</span>🍽️</div>
+          <div class="body">
+            <h3>Brooklyn Dinner Plate</h3>
+            <p class="sub">Set of 2 stoneware plates, light-brown rim, cream glaze.</p>
+            <div class="row"><span class="price">$96</span><button class="add" data-name="Brooklyn Dinner Plate Set">Add to cart</button></div>
+          </div>
+        </article>
+        <article class="card" data-cat="mugs">
+          <div class="thumb t2">🫖</div>
+          <div class="body">
+            <h3>Morning Ritual Teapot</h3>
+            <p class="sub">Hand-built teapot, light-brown body, sky-blue lid. 24oz.</p>
+            <div class="row"><span class="price">$138</span><button class="add" data-name="Morning Ritual Teapot">Add to cart</button></div>
+          </div>
+        </article>
+        <article class="card" data-cat="mugs">
+          <div class="thumb t1">🥛</div>
+          <div class="body">
+            <h3>Tumbler Pair</h3>
+            <p class="sub">Two stackable tumblers, layered white + sky glaze. 10oz each.</p>
+            <div class="row"><span class="price">$56</span><button class="add" data-name="Tumbler Pair">Add to cart</button></div>
+          </div>
+        </article>
+        <article class="card" data-cat="vases">
+          <div class="thumb t3"><span class="pill">Bestseller</span>🪴</div>
+          <div class="body">
+            <h3>Terra Planter</h3>
+            <p class="sub">Mid-size planter with drainage dish, raw clay + white wash.</p>
+            <div class="row"><span class="price">$84</span><button class="add" data-name="Terra Planter">Add to cart</button></div>
+          </div>
+        </article>
+        <article class="card" data-cat="tableware">
+          <div class="thumb t4">🍶</div>
+          <div class="body">
+            <h3>Carafe &amp; Cup Set</h3>
+            <p class="sub">Bedside carafe with nesting cup, light-brown speckle glaze.</p>
+            <div class="row"><span class="price">$110</span><button class="add" data-name="Carafe & Cup Set">Add to cart</button></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="shop-foot">
+        <a href="#shop" class="btn btn-ghost">View full catalog →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT MIA ============ -->
+  <section class="sec" id="about">
+    <div class="wrap about-grid">
+      <div class="about-photo">
+        👩‍🎨
+        <div class="stamp">MIA<br>EST.<br>BKLYN</div>
+      </div>
+      <div class="about-text">
+        <span class="kicker" style="color:var(--terra-deep);font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;">Meet the Maker</span>
+        <h2>Hi, I'm <em>Mia Calixto</em> — a Brooklyn-born, self-taught potter.</h2>
+        <p>I never went to art school for ceramics. Everything I know about clay I picked up by watching the techs and instructors at my studio, getting my hands dirty, and teaching kids' after-school classes since 2019. Watching a kid see their idea come to life in clay for the first time — that joy is the whole point.</p>
+        <p>Today I make functional, hand-thrown stoneware and porcelain out of my Brooklyn studio. I'm also a studio tech, a ceramics teacher for kids, and a college student studying Communication Design. When I'm not at the wheel, I'm painting, taking photos, or experimenting with mixed media.</p>
+        <p><em>Clay Diary</em> is where I share the work — and the messy, joyful process behind it.</p>
+
+        <div class="creds">
+          <div class="cred"><div class="ic">🎓</div><h4>Self-Taught</h4><p>Learned clay by watching the techs — no art school, just devotion and thousands of hours at the wheel.</p></div>
+          <div class="cred"><div class="ic">🧑‍🏫</div><h4>Kids Ceramics Teacher</h4><p>After-school and summer camp classes since 2019. The joy on a kid's face is the whole point.</p></div>
+          <div class="cred"><div class="ic">🔧</div><h4>Studio Technician</h4><p>Mixes glazes, runs kilns, and keeps the studio firing at Clayhouse Brooklyn.</p></div>
+          <div class="cred"><div class="ic">🎨</div><h4>Multi-Disciplinary</h4><p>Painting, mixed media, photography, and ceramics. Clay is the love, not the only one.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES / COMMISSIONS ============ -->
+  <section class="sec" id="services" style="background: linear-gradient(180deg, var(--sky-wash) 0%, var(--terra-wash) 100%); position:relative;">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Work With Mia</span>
+        <h2>Beyond the shop shelf</h2>
+        <p>From custom commissions to hands-on classes, there are lots of ways to bring Mia's craft into your home, your café, or your own creative practice.</p>
+      </div>
+      <div class="svc-grid">
+        <div class="svc">
+          <div class="ic">✍️</div>
+          <h3>Custom Commissions</h3>
+          <p>Need a matching set for your café, a wedding registry, or a one-of-a-kind gift? Mia takes on bespoke commissions in stoneware and porcelain, made to your palette and spec.</p>
+          <a href="#commission" class="more">Start a commission →</a>
+        </div>
+        <div class="svc">
+          <div class="ic">🎨</div>
+          <h3>Ceramics Classes</h3>
+          <p>Learn wheel throwing and hand-building in a small, beginner-friendly group. Mia's classes cover centering, trimming, glazing, and the joy of getting muddy.</p>
+          <a href="#events" class="more">Book a class →</a>
+        </div>
+        <div class="svc">
+          <div class="ic">🏪</div>
+          <h3>Wholesale &amp; Events</h3>
+          <p>Stock Clay Diary in your shop, or invite Mia to your next market, pop-up, or ceramic sales event. Trusted by retailers and event organizers across NYC.</p>
+          <a href="#events" class="more">Get in touch →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COMMISSION FORM ============ -->
+  <section class="sec" id="commission" style="background: linear-gradient(180deg, var(--terra-wash) 0%, var(--terra-soft) 40%, var(--peach) 70%, var(--sky-soft) 100%); position:relative;">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Custom Work</span>
+        <h2>Commission a piece</h2>
+        <p>Tell Mia what you're envisioning — she'll get back to you within 3–5 days to talk through details, timeline, and pricing.</p>
+      </div>
+      <form class="commission-form" onsubmit="submitCommission(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-name">Your name</label>
+            <input type="text" id="c-name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email address</label>
+            <input type="email" id="c-email" placeholder="jane@example.com" required />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-type">What are you looking for?</label>
+            <select id="c-type">
+              <option value="">Select a type…</option>
+              <option>Mug or Cup</option>
+              <option>Bowl</option>
+              <option>Plate Set</option>
+              <option>Vase or Planter</option>
+              <option>Full Dinnerware Set</option>
+              <option>Gift Set</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="c-qty">Quantity</label>
+            <input type="number" id="c-qty" min="1" value="1" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="c-glaze">Colors or glazes in mind</label>
+            <input type="text" id="c-glaze" placeholder="e.g. sky blue matte, earthy browns, speckled white…" />
+          </div>
+          <div class="form-group">
+            <label for="c-timeline">Timeline</label>
+            <select id="c-timeline">
+              <option>Flexible</option>
+              <option>1–2 months</option>
+              <option>2–4 weeks</option>
+              <option>ASAP</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group form-single">
+          <label for="c-message">Tell Mia more</label>
+          <textarea id="c-message" placeholder="Describe what you're imagining — the shape, the feel, what it's for, any inspiration or reference photos…"></textarea>
+        </div>
+        <div class="form-foot">
+          <button type="submit" class="btn btn-primary">Send commission request →</button>
+          <p class="form-note">Mia personally reads every request and responds within 3–5 business days.</p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ EVENTS / CTA BAND ============ -->
+  <section class="sec" id="events">
+    <div class="wrap">
+      <div class="band">
+        <h2>Catch Clay Diary at the next ceramic sale</h2>
+        <p>Mia and Clay Diary regularly show at Brooklyn markets, gallery pop-ups, and citywide ceramic sales events. Join the list for first dibs on new drops, class openings, and event dates.</p>
+        <a href="#journal" class="btn btn-primary">See upcoming dates →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section class="sec" style="background: linear-gradient(135deg, var(--sky-wash) 0%, var(--terra-wash) 50%, var(--cream) 100%); position:relative;">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Kind Words</span>
+        <h2>Loved by collectors &amp; students</h2>
+      </div>
+      <div class="quotes">
+        <div class="quote">
+          <div class="stars">★★★★★</div>
+          <p>"My Sky Wash mug is the first thing I reach for every morning. The glaze is unreal and you can feel the handmade quality."</p>
+          <div class="who">Dani R. <span>Brooklyn, NY</span></div>
+        </div>
+        <div class="quote">
+          <div class="stars">★★★★★</div>
+          <p>"Mia commissioned a 12-piece dinnerware set for our café. Customers compliment them daily. A true craftsperson."</p>
+          <div class="who">Owner, Greenpoint Café <span>Commission client</span></div>
+        </div>
+        <div class="quote">
+          <div class="stars">★★★★★</div>
+          <p>"Took Mia's beginner wheel class with zero experience and left obsessed. Patient, generous, and so knowledgeable."</p>
+          <div class="who">Jordan P. <span>Class student</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER / JOURNAL ============ -->
+  <section class="sec" id="journal">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="kicker">Stay in the loop</span>
+        <h2>New drops, class dates &amp; studio notes</h2>
+        <p>Join the Clay Diary list for early access to limited collections, upcoming ceramic sales events, and the occasional behind-the-scenes from the studio.</p>
+        <form class="news" onsubmit="subscribe(event)">
+          <input type="email" placeholder="your@email.com" required aria-label="Email address" />
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div>
+          <div class="brand" style="font-family:'Fraunces',serif;font-size:1.4rem;">Clay Diary</div>
+          <p>Clay Diary — handmade stoneware &amp; porcelain from Mia, a self-taught ceramist, teacher &amp; technician based in Brooklyn, New York. Functional pottery for everyday rituals.</p>
+        </div>
+        <div>
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#shop">Mugs &amp; Cups</a></li>
+            <li><a href="#shop">Bowls &amp; Tableware</a></li>
+            <li><a href="#shop">Vases &amp; Planters</a></li>
+            <li><a href="#shop">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="#about">About Mia</a></li>
+            <li><a href="#services">Commissions</a></li>
+            <li><a href="#events">Classes</a></li>
+            <li><a href="#events">Sales Events</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#journal">Contact</a></li>
+            <li><a href="#shop">Shipping &amp; Returns</a></li>
+            <li><a href="#about">Care Guide</a></li>
+            <li><a href="#services">Wholesale</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 Clay Diary — Handmade in Brooklyn, NY. All rights reserved.</span>
+        <div class="socials">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.79a8.18 8.18 0 0 0 4.83 1.55V6.89a4.85 4.85 0 0 1-1.06-.2z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">Added to cart 🛒</div>
+
+  <script>
+    // Mobile nav
+    const burger = document.getElementById('burger');
+    const navLinks = document.getElementById('navLinks');
+    burger.addEventListener('click', () => navLinks.classList.toggle('open'));
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+    // Filter chips
+    document.querySelectorAll('.chip').forEach(c => c.addEventListener('click', () => {
+      document.querySelectorAll('.chip').forEach(x => x.classList.remove('active'));
+      c.classList.add('active');
+      const filter = c.dataset.filter;
+      document.querySelectorAll('#shop .card').forEach(card => {
+        card.style.display = (filter === 'all' || card.dataset.cat === filter) ? 'flex' : 'none';
+      });
+    }));
+
+    // Add to cart toast
+    const toast = document.getElementById('toast');
+    let cart = 0;
+    document.querySelectorAll('.add').forEach(b => b.addEventListener('click', () => {
+      cart++;
+      toast.textContent = `Added "${b.dataset.name}" — ${cart} in cart 🛒`;
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    }));
+
+    function subscribe(e){
+      e.preventDefault();
+      toast.textContent = "You're on the list! 🌿";
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2400);
+      e.target.reset();
+    }
+
+    function submitCommission(e){
+      e.preventDefault();
+      toast.textContent = 'Request sent — Mia will be in touch soon 🌿';
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 3000);
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

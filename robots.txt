@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://miaceramics.com/sitemap.xml
